@@ -109,6 +109,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 
             } else {
                 
+                let n = self.tableView.frame.minY - privousContentOffestY
+                
                 var scrollBounds = self.tableView.bounds
                 var offset = self.tableView.contentOffset.y + self.scrollView.contentOffset.y - privousContentOffestY - n
                 var diff: CGFloat = 0
